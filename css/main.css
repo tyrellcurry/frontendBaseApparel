@@ -262,7 +262,7 @@ main {
 }
 
 input[type=text] {   
-    /* Remove IOS Style */
+    /* Remove IOS Style. */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
