@@ -246,6 +246,9 @@ main {
 		height: 55px;
 		width: 80px;
 		transform: translate(-50%, -6%);
+		-webkit-appearance: none;
+    	-moz-appearance: none;
+    	appearance: none;
 	}
 	
 
@@ -257,5 +260,12 @@ main {
 	margin-left: 30px;
 	}
 }
+
+input[type=text] {   
+    /* Remove IOS Style */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    }
 
 /*Mobile Properties*/
