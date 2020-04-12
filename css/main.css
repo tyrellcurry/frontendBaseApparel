@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+/*General Properties*/
+
+html {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1005px;
+	margin: 0 auto; 
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-flow: column;
+
+}
+
+.hero {
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 3em;
+	font-weight: 600;
+	letter-spacing: 1rem;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.hero h1 span {
+		font-weight: 300;
+		color: hsl(0, 36%, 70%);
+	}
+
+.hero p {
+	font-size: 1.2em;
+	max-width: 400px;
+	line-height: 1.8em;
+	margin: auto;
+	margin-bottom: 3em;
+	color: hsl(0, 36%, 70%);
+}
+
+.hero button {
+	background: hsl(0, 93%, 68%) url("../images/icon-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 1.1em 2em;
+	border-radius: 50px;
+	border-style: solid;
+	cursor: pointer;
+}
+.hero button:focus {
+		outline: none;
+	}
+.input-form{
+		border: solid .1em rgba(0, 0, 0, .15);
+		border-radius: 50px;
+		color: rgba(0, 0, 0, .65);
+		font-family: 'Josefin Sans', sans-serif;
+	}
+
+/*General Properties*/
+
+
+/*Desktop Properties*/
+@media screen and (min-width: 1080px) {
+	
+	.container {
+		padding: 2em 1em;
+	}
+
+	main {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: wrap;
+		align-items: center;
+		height: 90vh;
+		flex-flow: row;
+	}
+	.hero {
+		text-align: left;
+		transform: translateX(10%);
+
+
+	}
+	
+	.hero h1 {
+		font-size: 3em;
+		font-weight: 600;
+		letter-spacing: 1rem;
+		line-height: 1.15em;
+		
+		transform: translateY(20%);
+	}
+
+	
+	.hero p:before {
+		margin: 1em 0;
+	}
+	.hero p {
+		font-size: .8rem;
+		padding: 0;
+		margin: 0 0 3em 0;
+		transform: translateY(10%);
+		width: 85%;
+		
+		max-width: 500px;
+	}
+
+	.hero img {
+		width: 31%;
+		transform: translateY(-100%);
+		
+	}
+	.input-form{
+		width: 280px;
+		height: 40px;
+		padding-left: 20px;
+	}
+
+	input:focus, textarea {
+    	outline: none !important;
+	}
+
+	.hero button {
+	font-size: 1.3em;
+	transform:translate(-40%,-10%);
+	margin-bottom: 35px;
+	
+	}
+
+
+	figure {
+	text-align: center;
+	
+	}
+	
+	figure img {
+	margin-top: .8em;
+	width: 488px;
+	transform: translateX(23.20%);
+	}
+
+
+	#mobile-img {
+		display: none;
+	}
+
+}
+/*Desktop Properties*/
+
+
+/*Mobile Properties*/
+@media screen and (max-width: 1080px){
+
+	html, body {
+		width: 100%;
+		margin: 0;
+	}
+
+	main {
+		display: flex;
+		align-items: center;
+	}
+
+	figure img {
+		display: none;
+	}
+
+
+	.hero h1 {
+	font-size: 2.5em;
+	letter-spacing: .7rem;
+	line-height: 1em;
+	margin: auto;
+	margin-bottom: 30px;
+	
+	}
+
+	.hero p {
+		font-size: .9em;
+		width: 80%;
+		line-height: 1.5em;
+		text-align: center;
+		margin: auto;
+	}
+
+	.mobile {
+		text-align: left;
+		margin: 0;
+		width: 100%;
+
+	}
+
+	.mobile img {
+		margin-top: 30px;
+		margin-left: 30px;
+		width: 25%;
+	}
+
+	.mobile_img {
+		background: url(../images/hero-mobile.jpg);
+		height: 35vh;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 100%;
+		margin: 0;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		
+	}
+
+	.container{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+
+	form {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	.input-form {
+		height: 40px;
+		width: 20em;
+		text-indent: 20px;
+
+	}
+	form input:focus {
+		outline: none;
+	}
+
+	.hero button {
+		height: 55px;
+		width: 80px;
+		transform: translate(-50%, -6%);
+	}
+	
+
+
+	.form-block {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	margin-left: 30px;
+	}
+}
+
+/*Mobile Properties*/
