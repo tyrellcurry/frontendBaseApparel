@@ -56,9 +56,6 @@ main {
 	border-radius: 50px;
 	border-style: solid;
 	cursor: pointer;
-	-webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
 }
 .hero button:focus {
 		outline: none;
@@ -70,11 +67,12 @@ main {
 		font-family: 'Josefin Sans', sans-serif;
 	}
 
-input[type=email] {   
+input, button {   
     /* Remove IOS Style */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    outline: none;
     }
 
 /*General Properties*/
