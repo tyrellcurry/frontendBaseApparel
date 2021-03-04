@@ -15,7 +15,7 @@
 - ### Mobile responsive using CSS3.
 - ### Form validation using JavaScript conditional logic.
 
-## [Check Out The Project!](https://tyrellcurry.github.io/frontend-base-apparel/)
+## [Check Out The Project!](https://tyrellcurry.github.io/frontendBaseApparel/)
 
 <br />
 
